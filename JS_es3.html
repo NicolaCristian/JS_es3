@@ -14,14 +14,21 @@
 <h2> simply calculator </h2>
 
 
-<input type="number" name="numero" id="num">
+<input type="number" name="numero1" id="num1">
+<input type="number" name="numero2" id="num2">
+<input type="" name="numero2" id="segno">
+
+<br></br>
 
 
 
-<table id = "tabella">
-    <tr><td></td></tr>
-    <tr><td>Numero</td></tr>
-    </table>
+<table id = "tabella" bgcolor="#99FFFF" border= "2">
+<tr><td>N1</td>
+    <td>Segno</td>
+    <td>N2</td>
+    <td>ris</td>
+</tr>
+    </table><br></br>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
@@ -29,9 +36,18 @@
 <script>
 
 $("body").append($("<button id='btn1'>CLICCAMI</button>").click(function(){ 
-    var num= "<tr><td>"+$("#num").val()+"</td></tr>";
    
-    $("#tabella").append(num);
+   var num1=parseInt($("#num1").val());
+   var num2=parseInt($("#num2").val());
+   
+    var stringa=
+     "<tr><td>"+num1+"</td>"+
+      "<td>"+$("#segno").val()+"</td>"+
+      "<td>"+num2+"</td></tr>";
+
+     
+   
+    $("#tabella").append(stringa);
 
 }));
 

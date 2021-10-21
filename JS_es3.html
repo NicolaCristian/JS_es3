@@ -6,29 +6,36 @@
 
 </head>
 
+
+
+
 <body>
 <h1>JS ES 3</h1>
 <h2> simply calculator </h2>
 
 
-<input type="number" name="numero" value="Luca" id="num">
-
+<input type="number" name="numero" id="num">
 
 
 
 <table id = "tabella">
+    <tr><td></td></tr>
     <tr><td>Numero</td></tr>
     </table>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js">
 
-$("body").append("<button id='btn1'>STAMPA</button>");
-$("tabella").append("");
-var a = document.getElementById("b").value
-    
+
+<script>
+
+$("body").append($("<button id='btn1'>CLICCAMI</button>").click(function(){ 
+    var num= "<tr><td>"+$("#num").val()+"</td></tr>";
+   
+    $("#tabella").append(num);
+
+}));
 
 </script>
-
 </body>
 
 

@@ -15,8 +15,13 @@
 
 
 <input type="number" name="numero1" id="num1">
-<input type="number" name="numero2" id="num2">
-<input type="" name="numero2" id="segno">
+<input type="number" name="numero2" id="num2"><br><br>
+<button id='btnpiu'>+</button>
+<button id='btnmeno'>-</button>
+<button id='btnper'>*</button>
+<button id='btndiv'>/</button>
+<button id='btn1'>CLICCAMI</button>
+
 
 <br></br>
 
@@ -31,27 +36,9 @@
     </table><br></br>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+<script src="es3.js"></script>
 
 
-<script>
-
-$("body").append($("<button id='btn1'>CLICCAMI</button>").click(function(){ 
-   
-   var num1=parseInt($("#num1").val());
-   var num2=parseInt($("#num2").val());
-   
-    var stringa=
-     "<tr><td>"+num1+"</td>"+
-      "<td>"+$("#segno").val()+"</td>"+
-      "<td>"+num2+"</td></tr>";
-
-     
-   
-    $("#tabella").append(stringa);
-
-}));
-
-</script>
 </body>
 
 
